@@ -39,7 +39,6 @@ namespace TP_06_ExamenationSystem
             this.textBoxDuration = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnContinue = new System.Windows.Forms.Button();
-            this.createQuestions1 = new TP_06_ExamenationSystem.CreateQuestions();
             this.SuspendLayout();
             // 
             // lblExamTitle
@@ -126,20 +125,11 @@ namespace TP_06_ExamenationSystem
             this.btnContinue.UseVisualStyleBackColor = true;
             this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
             // 
-            // createQuestions1
-            // 
-            this.createQuestions1.Location = new System.Drawing.Point(-2, -4);
-            this.createQuestions1.Name = "createQuestions1";
-            this.createQuestions1.Size = new System.Drawing.Size(801, 455);
-            this.createQuestions1.TabIndex = 16;
-            this.createQuestions1.Visible = false;
-            // 
             // CreateExam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.createQuestions1);
+            this.ClientSize = new System.Drawing.Size(859, 609);
             this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.textBoxDuration);
@@ -169,6 +159,5 @@ namespace TP_06_ExamenationSystem
         private System.Windows.Forms.TextBox textBoxDuration;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnContinue;
-        private CreateQuestions createQuestions1;
     }
 }

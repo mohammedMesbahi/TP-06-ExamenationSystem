@@ -37,10 +37,17 @@ namespace TP_06_ExamenationSystem
             this.textBoxQuestionText = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxNote = new System.Windows.Forms.TextBox();
+            this.lblProposition1 = new System.Windows.Forms.Label();
+            this.lblProposition2 = new System.Windows.Forms.Label();
+            this.lblProposition3 = new System.Windows.Forms.Label();
+            this.lblProposition4 = new System.Windows.Forms.Label();
+            this.textBoxProposition1 = new System.Windows.Forms.TextBox();
+            this.textBoxProposition2 = new System.Windows.Forms.TextBox();
+            this.textBoxProposition3 = new System.Windows.Forms.TextBox();
+            this.textBoxProposition4 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblCurrentNumber = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblQuestionType
@@ -61,14 +68,14 @@ namespace TP_06_ExamenationSystem
             "Qestion Overt"});
             this.ListTypeOfQuetions.Location = new System.Drawing.Point(248, 46);
             this.ListTypeOfQuetions.Name = "ListTypeOfQuetions";
-            this.ListTypeOfQuetions.Size = new System.Drawing.Size(206, 28);
+            this.ListTypeOfQuetions.Size = new System.Drawing.Size(394, 28);
             this.ListTypeOfQuetions.TabIndex = 1;
             // 
             // textBoxNumberOfPropositions
             // 
             this.textBoxNumberOfPropositions.Location = new System.Drawing.Point(248, 112);
             this.textBoxNumberOfPropositions.Name = "textBoxNumberOfPropositions";
-            this.textBoxNumberOfPropositions.Size = new System.Drawing.Size(206, 26);
+            this.textBoxNumberOfPropositions.Size = new System.Drawing.Size(394, 26);
             this.textBoxNumberOfPropositions.TabIndex = 2;
             this.textBoxNumberOfPropositions.TextChanged += new System.EventHandler(this.textBoxNumberOfPropositions_TextChanged);
             // 
@@ -94,7 +101,7 @@ namespace TP_06_ExamenationSystem
             // 
             this.textBoxQuestionText.Location = new System.Drawing.Point(248, 173);
             this.textBoxQuestionText.Name = "textBoxQuestionText";
-            this.textBoxQuestionText.Size = new System.Drawing.Size(206, 26);
+            this.textBoxQuestionText.Size = new System.Drawing.Size(394, 26);
             this.textBoxQuestionText.TabIndex = 5;
             // 
             // label2
@@ -110,53 +117,116 @@ namespace TP_06_ExamenationSystem
             // 
             this.textBoxNote.Location = new System.Drawing.Point(248, 240);
             this.textBoxNote.Name = "textBoxNote";
-            this.textBoxNote.Size = new System.Drawing.Size(206, 26);
+            this.textBoxNote.Size = new System.Drawing.Size(394, 26);
             this.textBoxNote.TabIndex = 7;
+            // 
+            // lblProposition1
+            // 
+            this.lblProposition1.AutoSize = true;
+            this.lblProposition1.Location = new System.Drawing.Point(244, 323);
+            this.lblProposition1.Name = "lblProposition1";
+            this.lblProposition1.Size = new System.Drawing.Size(97, 20);
+            this.lblProposition1.TabIndex = 8;
+            this.lblProposition1.Text = "Proposition1";
+            // 
+            // lblProposition2
+            // 
+            this.lblProposition2.AutoSize = true;
+            this.lblProposition2.Location = new System.Drawing.Point(244, 376);
+            this.lblProposition2.Name = "lblProposition2";
+            this.lblProposition2.Size = new System.Drawing.Size(97, 20);
+            this.lblProposition2.TabIndex = 9;
+            this.lblProposition2.Text = "Proposition2";
+            // 
+            // lblProposition3
+            // 
+            this.lblProposition3.AutoSize = true;
+            this.lblProposition3.Location = new System.Drawing.Point(244, 431);
+            this.lblProposition3.Name = "lblProposition3";
+            this.lblProposition3.Size = new System.Drawing.Size(97, 20);
+            this.lblProposition3.TabIndex = 10;
+            this.lblProposition3.Text = "Proposition3";
+            // 
+            // lblProposition4
+            // 
+            this.lblProposition4.AutoSize = true;
+            this.lblProposition4.Location = new System.Drawing.Point(244, 481);
+            this.lblProposition4.Name = "lblProposition4";
+            this.lblProposition4.Size = new System.Drawing.Size(97, 20);
+            this.lblProposition4.TabIndex = 11;
+            this.lblProposition4.Text = "Proposition4";
+            // 
+            // textBoxProposition1
+            // 
+            this.textBoxProposition1.Location = new System.Drawing.Point(398, 316);
+            this.textBoxProposition1.Name = "textBoxProposition1";
+            this.textBoxProposition1.Size = new System.Drawing.Size(244, 26);
+            this.textBoxProposition1.TabIndex = 12;
+            // 
+            // textBoxProposition2
+            // 
+            this.textBoxProposition2.Location = new System.Drawing.Point(398, 370);
+            this.textBoxProposition2.Name = "textBoxProposition2";
+            this.textBoxProposition2.Size = new System.Drawing.Size(244, 26);
+            this.textBoxProposition2.TabIndex = 13;
+            // 
+            // textBoxProposition3
+            // 
+            this.textBoxProposition3.Location = new System.Drawing.Point(398, 428);
+            this.textBoxProposition3.Name = "textBoxProposition3";
+            this.textBoxProposition3.Size = new System.Drawing.Size(244, 26);
+            this.textBoxProposition3.TabIndex = 14;
+            // 
+            // textBoxProposition4
+            // 
+            this.textBoxProposition4.Location = new System.Drawing.Point(398, 478);
+            this.textBoxProposition4.Name = "textBoxProposition4";
+            this.textBoxProposition4.Size = new System.Drawing.Size(244, 26);
+            this.textBoxProposition4.TabIndex = 15;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(47, 358);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(92, 47);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Next";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(244, 323);
+            this.label3.Location = new System.Drawing.Point(3, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 20);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "label3";
+            this.label3.Size = new System.Drawing.Size(93, 20);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Question N°";
             // 
-            // label4
+            // lblCurrentNumber
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(244, 376);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 20);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "label4";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(244, 431);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 20);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "label5";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(244, 481);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 20);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "label6";
+            this.lblCurrentNumber.AutoSize = true;
+            this.lblCurrentNumber.Location = new System.Drawing.Point(106, 12);
+            this.lblCurrentNumber.Name = "lblCurrentNumber";
+            this.lblCurrentNumber.Size = new System.Drawing.Size(18, 20);
+            this.lblCurrentNumber.TabIndex = 18;
+            this.lblCurrentNumber.Text = "1";
             // 
             // CreateQuestions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblCurrentNumber);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBoxProposition4);
+            this.Controls.Add(this.textBoxProposition3);
+            this.Controls.Add(this.textBoxProposition2);
+            this.Controls.Add(this.textBoxProposition1);
+            this.Controls.Add(this.lblProposition4);
+            this.Controls.Add(this.lblProposition3);
+            this.Controls.Add(this.lblProposition2);
+            this.Controls.Add(this.lblProposition1);
             this.Controls.Add(this.textBoxNote);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxQuestionText);
@@ -183,9 +253,16 @@ namespace TP_06_ExamenationSystem
         private System.Windows.Forms.TextBox textBoxQuestionText;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxNote;
+        private System.Windows.Forms.Label lblProposition1;
+        private System.Windows.Forms.Label lblProposition2;
+        private System.Windows.Forms.Label lblProposition3;
+        private System.Windows.Forms.Label lblProposition4;
+        private System.Windows.Forms.TextBox textBoxProposition1;
+        private System.Windows.Forms.TextBox textBoxProposition2;
+        private System.Windows.Forms.TextBox textBoxProposition3;
+        private System.Windows.Forms.TextBox textBoxProposition4;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblCurrentNumber;
     }
 }

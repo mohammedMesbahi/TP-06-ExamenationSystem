@@ -12,6 +12,7 @@ namespace TP_06_ExamenationSystem
 {
     public partial class CreateExam : Form
     {
+        
         public CreateExam()
         {
             InitializeComponent();
@@ -28,6 +29,16 @@ namespace TP_06_ExamenationSystem
         private void btnContinue_Click(object sender, EventArgs e)
         {
             createQuestions1.Show();
+        }
+
+        private void createQuestions1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void createQuestions1_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
