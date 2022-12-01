@@ -45,9 +45,9 @@ namespace TP_06_ExamenationSystem
             this.textBoxProposition2 = new System.Windows.Forms.TextBox();
             this.textBoxProposition3 = new System.Windows.Forms.TextBox();
             this.textBoxProposition4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.lblCurrentNumber = new System.Windows.Forms.Label();
+            this.btnNext = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblQuestionType
@@ -58,6 +58,7 @@ namespace TP_06_ExamenationSystem
             this.lblQuestionType.Size = new System.Drawing.Size(111, 20);
             this.lblQuestionType.TabIndex = 0;
             this.lblQuestionType.Text = "Question Type";
+            this.lblQuestionType.Click += new System.EventHandler(this.lblQuestionType_Click);
             // 
             // ListTypeOfQuetions
             // 
@@ -70,6 +71,7 @@ namespace TP_06_ExamenationSystem
             this.ListTypeOfQuetions.Name = "ListTypeOfQuetions";
             this.ListTypeOfQuetions.Size = new System.Drawing.Size(394, 28);
             this.ListTypeOfQuetions.TabIndex = 1;
+            this.ListTypeOfQuetions.SelectedIndexChanged += new System.EventHandler(this.ListTypeOfQuetions_SelectedIndexChanged);
             // 
             // textBoxNumberOfPropositions
             // 
@@ -87,6 +89,7 @@ namespace TP_06_ExamenationSystem
             this.lblNumberOfPropositions.Size = new System.Drawing.Size(177, 20);
             this.lblNumberOfPropositions.TabIndex = 3;
             this.lblNumberOfPropositions.Text = "Number Of Propositions";
+            this.lblNumberOfPropositions.Click += new System.EventHandler(this.lblNumberOfPropositions_Click);
             // 
             // label1
             // 
@@ -96,6 +99,7 @@ namespace TP_06_ExamenationSystem
             this.label1.Size = new System.Drawing.Size(107, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "Question Text";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBoxQuestionText
             // 
@@ -103,6 +107,7 @@ namespace TP_06_ExamenationSystem
             this.textBoxQuestionText.Name = "textBoxQuestionText";
             this.textBoxQuestionText.Size = new System.Drawing.Size(394, 26);
             this.textBoxQuestionText.TabIndex = 5;
+            this.textBoxQuestionText.TextChanged += new System.EventHandler(this.textBoxQuestionText_TextChanged);
             // 
             // label2
             // 
@@ -112,6 +117,7 @@ namespace TP_06_ExamenationSystem
             this.label2.Size = new System.Drawing.Size(52, 20);
             this.label2.TabIndex = 6;
             this.label2.Text = "NOTE";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBoxNote
             // 
@@ -119,6 +125,7 @@ namespace TP_06_ExamenationSystem
             this.textBoxNote.Name = "textBoxNote";
             this.textBoxNote.Size = new System.Drawing.Size(394, 26);
             this.textBoxNote.TabIndex = 7;
+            this.textBoxNote.TextChanged += new System.EventHandler(this.textBoxNote_TextChanged);
             // 
             // lblProposition1
             // 
@@ -128,6 +135,7 @@ namespace TP_06_ExamenationSystem
             this.lblProposition1.Size = new System.Drawing.Size(97, 20);
             this.lblProposition1.TabIndex = 8;
             this.lblProposition1.Text = "Proposition1";
+            this.lblProposition1.Click += new System.EventHandler(this.lblProposition1_Click);
             // 
             // lblProposition2
             // 
@@ -137,6 +145,7 @@ namespace TP_06_ExamenationSystem
             this.lblProposition2.Size = new System.Drawing.Size(97, 20);
             this.lblProposition2.TabIndex = 9;
             this.lblProposition2.Text = "Proposition2";
+            this.lblProposition2.Click += new System.EventHandler(this.lblProposition2_Click);
             // 
             // lblProposition3
             // 
@@ -146,6 +155,7 @@ namespace TP_06_ExamenationSystem
             this.lblProposition3.Size = new System.Drawing.Size(97, 20);
             this.lblProposition3.TabIndex = 10;
             this.lblProposition3.Text = "Proposition3";
+            this.lblProposition3.Click += new System.EventHandler(this.lblProposition3_Click);
             // 
             // lblProposition4
             // 
@@ -155,6 +165,7 @@ namespace TP_06_ExamenationSystem
             this.lblProposition4.Size = new System.Drawing.Size(97, 20);
             this.lblProposition4.TabIndex = 11;
             this.lblProposition4.Text = "Proposition4";
+            this.lblProposition4.Click += new System.EventHandler(this.lblProposition4_Click);
             // 
             // textBoxProposition1
             // 
@@ -162,6 +173,7 @@ namespace TP_06_ExamenationSystem
             this.textBoxProposition1.Name = "textBoxProposition1";
             this.textBoxProposition1.Size = new System.Drawing.Size(244, 26);
             this.textBoxProposition1.TabIndex = 12;
+            this.textBoxProposition1.TextChanged += new System.EventHandler(this.textBoxProposition1_TextChanged);
             // 
             // textBoxProposition2
             // 
@@ -169,6 +181,7 @@ namespace TP_06_ExamenationSystem
             this.textBoxProposition2.Name = "textBoxProposition2";
             this.textBoxProposition2.Size = new System.Drawing.Size(244, 26);
             this.textBoxProposition2.TabIndex = 13;
+            this.textBoxProposition2.TextChanged += new System.EventHandler(this.textBoxProposition2_TextChanged);
             // 
             // textBoxProposition3
             // 
@@ -176,6 +189,7 @@ namespace TP_06_ExamenationSystem
             this.textBoxProposition3.Name = "textBoxProposition3";
             this.textBoxProposition3.Size = new System.Drawing.Size(244, 26);
             this.textBoxProposition3.TabIndex = 14;
+            this.textBoxProposition3.TextChanged += new System.EventHandler(this.textBoxProposition3_TextChanged);
             // 
             // textBoxProposition4
             // 
@@ -183,16 +197,7 @@ namespace TP_06_ExamenationSystem
             this.textBoxProposition4.Name = "textBoxProposition4";
             this.textBoxProposition4.Size = new System.Drawing.Size(244, 26);
             this.textBoxProposition4.TabIndex = 15;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(47, 358);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 47);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Next";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.textBoxProposition4.TextChanged += new System.EventHandler(this.textBoxProposition4_TextChanged);
             // 
             // label3
             // 
@@ -212,13 +217,23 @@ namespace TP_06_ExamenationSystem
             this.lblCurrentNumber.TabIndex = 18;
             this.lblCurrentNumber.Text = "1";
             // 
+            // btnNext
+            // 
+            this.btnNext.Location = new System.Drawing.Point(48, 419);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(97, 47);
+            this.btnNext.TabIndex = 20;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
             // CreateQuestions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnNext);
             this.Controls.Add(this.lblCurrentNumber);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBoxProposition4);
             this.Controls.Add(this.textBoxProposition3);
             this.Controls.Add(this.textBoxProposition2);
@@ -261,8 +276,8 @@ namespace TP_06_ExamenationSystem
         private System.Windows.Forms.TextBox textBoxProposition2;
         private System.Windows.Forms.TextBox textBoxProposition3;
         private System.Windows.Forms.TextBox textBoxProposition4;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblCurrentNumber;
+        private System.Windows.Forms.Button btnNext;
     }
 }

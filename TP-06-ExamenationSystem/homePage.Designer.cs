@@ -29,21 +29,21 @@ namespace TP_06_ExamenationSystem
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCrealeExam = new System.Windows.Forms.Button();
+            this.btnCreateExam = new System.Windows.Forms.Button();
             this.btnPassExam = new System.Windows.Forms.Button();
             this.btnShowResults = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnCrealeExam
+            // btnCreateExam
             // 
-            this.btnCrealeExam.Location = new System.Drawing.Point(193, 89);
-            this.btnCrealeExam.Name = "btnCrealeExam";
-            this.btnCrealeExam.Size = new System.Drawing.Size(193, 112);
-            this.btnCrealeExam.TabIndex = 0;
-            this.btnCrealeExam.Text = "Creat Exam";
-            this.btnCrealeExam.UseVisualStyleBackColor = true;
-            this.btnCrealeExam.Click += new System.EventHandler(this.btnCrealeExam_Click);
+            this.btnCreateExam.Location = new System.Drawing.Point(193, 89);
+            this.btnCreateExam.Name = "btnCreateExam";
+            this.btnCreateExam.Size = new System.Drawing.Size(193, 112);
+            this.btnCreateExam.TabIndex = 0;
+            this.btnCreateExam.Text = "Creat Exam";
+            this.btnCreateExam.UseVisualStyleBackColor = true;
+            this.btnCreateExam.Click += new System.EventHandler(this.btnCrealeExam_Click);
             // 
             // btnPassExam
             // 
@@ -72,7 +72,7 @@ namespace TP_06_ExamenationSystem
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // homePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -80,8 +80,8 @@ namespace TP_06_ExamenationSystem
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnShowResults);
             this.Controls.Add(this.btnPassExam);
-            this.Controls.Add(this.btnCrealeExam);
-            this.Name = "Form1";
+            this.Controls.Add(this.btnCreateExam);
+            this.Name = "homePage";
             this.Text = "Form1";
             this.ResumeLayout(false);
 
@@ -89,7 +89,7 @@ namespace TP_06_ExamenationSystem
 
         #endregion
 
-        private System.Windows.Forms.Button btnCrealeExam;
+        private System.Windows.Forms.Button btnCreateExam;
         private System.Windows.Forms.Button btnPassExam;
         private System.Windows.Forms.Button btnShowResults;
         private System.Windows.Forms.Button button4;

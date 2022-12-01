@@ -18,27 +18,48 @@ namespace TP_06_ExamenationSystem
             InitializeComponent();
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        public void btnCancel_Click(object sender, EventArgs e)
         {
             this.Hide();
-            homePage home = new homePage();
-            home.Show();
-
+            new homePage();
         }
 
-        private void btnContinue_Click(object sender, EventArgs e)
+        public void btnContinue_Click(object sender, EventArgs e)
         {
-            createQuestions1.Show();
+            panelCreatQuestions.Show();
         }
 
-        private void createQuestions1_Load(object sender, EventArgs e)
+        public void CreateExam_Load(object sender, EventArgs e)
         {
-
+            panelCreatQuestions.Hide();
         }
 
-        private void createQuestions1_Load_1(object sender, EventArgs e)
+        private void btnNext_Click(object sender, EventArgs e)
         {
+            int counter = int.Parse(lblQuestionNumber.Text) +1;
+            lblQuestionNumber.Text = counter.ToString();
+            // here i will insert in the dataBase
+            hidePropositions();
+            clearPropositions();
 
+        }
+        public void hidePropositions()
+        {
+            lblProposition1.Hide();
+            lblProposition2.Hide();
+            lblProposition3.Hide();
+            lblProposition4.Hide();
+            textBoxProposition1.Hide();
+            textBoxProposition2.Hide();
+            textBoxProposition3.Hide();
+            textBoxProposition4.Hide();
+        }
+        public void clearPropositions()
+        {
+            textBoxProposition1.Text = "";
+            textBoxProposition2.Text = "";
+            textBoxProposition3.Text = "";
+            textBoxProposition4.Text = "";
         }
     }
 }

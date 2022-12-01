@@ -17,7 +17,7 @@ namespace TP_06_ExamenationSystem
             InitializeComponent();
         }
 
-        private void textBoxNumberOfPropositions_TextChanged(object sender, EventArgs e)
+        public void textBoxNumberOfPropositions_TextChanged(object sender, EventArgs e)
         {
             int counter;
             if (textBoxNumberOfPropositions.Text !="")
@@ -75,7 +75,19 @@ namespace TP_06_ExamenationSystem
             }
         }
 
-        private void CreateQuestions_Load(object sender, EventArgs e)
+        public void CreateQuestions_Load(object sender, EventArgs e)
+        {
+            hidePropositions();
+        }
+
+        public void btnNext_Click(object sender, EventArgs e)
+        {
+            
+            hidePropositions();
+            clearPropositions();
+
+        }
+        public void hidePropositions()
         {
             lblProposition1.Hide();
             lblProposition2.Hide();
@@ -86,10 +98,87 @@ namespace TP_06_ExamenationSystem
             textBoxProposition3.Hide();
             textBoxProposition4.Hide();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        public void clearPropositions()
         {
-            
+            textBoxProposition1.Text = "";
+            textBoxProposition2.Text = "";
+            textBoxProposition3.Text = "";
+            textBoxProposition4.Text = "";
+        }
+
+        private void textBoxProposition4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxProposition3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxProposition2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxProposition1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblProposition4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblProposition3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblProposition2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblProposition1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxNote_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxQuestionText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNumberOfPropositions_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ListTypeOfQuetions_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblQuestionType_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
